@@ -3,12 +3,16 @@ import {Link, useHistory} from "react-router-dom";
 import {postPokemon, getTypes} from "../../Redux/actions";
 import {useDispatch, useSelector} from "react-redux";
 import Validate from "../../Components/Validate/Validate"
+import style from "./create.module.css";
+import Fondo from "../../Imagenes/Fondo.mp4"
 
 export default function Create(){
     const dispatch = useDispatch()
     const history = useHistory()
     const types = useSelector((state) => state.types)
     const [errors,setErrors] = useState({});
+   
+
    
 
     const [input, setInput] = useState({
@@ -41,13 +45,16 @@ setErrors(Validate({
   }));
 }
 
-function handleSelect(e){
-    setInput({
+function handleSelect(e) {
+    const selectedType = e.target.value;
+    if (!input.types.includes(selectedType)) {
+      setInput({
         ...input,
-        types: [...input.types,e.target.value]
-    })
-}
-
+        types: [...input.types, selectedType]
+      });
+    }
+  }
+  
 function handleSubmit(e) {
     e.preventDefault();
   
@@ -103,9 +110,13 @@ function handleDelete(el){
 
 return(
     <div>
-        <Link to= "/home"><button>Volver</button></Link>
-        <h1>Crea tu Pokemon</h1>
-        <form onSubmit={(e)=>handleSubmit(e)}>
+       <video className={style.videobackground } autoPlay loop muted>
+          <source src={Fondo} type="video/mp4" />
+        </video>
+        <Link to= "/home"><button className={style.buttonc}>Volver</button></Link>
+        <div className={style.contc}>
+        <h1 className={style.ch1}>Crea tu Pokemon</h1>
+        <form className={style.formc} onSubmit={(e)=>handleSubmit(e)}>
             <div>
                 <label>Nombre:</label>
                 <input type="text"
@@ -196,31 +207,34 @@ return(
                     <p>{errors.weight}</p>
                 )}
             </div>
-            <h3>Types:</h3>
+            <div className={style.types}>
+            <h4>Types:</h4>
             <select onChange={(e) => handleSelect(e)}>
   {types.map((typ) => (
-    <option value={typ.id} key={typ.id}>
+    <option
+      value={typ.id}
+      key={typ.id}
+      disabled={input.types.includes(typ.id)}
+    >
       {typ.name}
     </option>
   ))}
-</select>
-
-
+</select></div>
 <br />
 <br />
 {isFormComplete() && (
-          <button type="submit">CREAR POKEMON</button>
+          <button className={style.buttonc} type="submit">CREAR POKEMON</button>
         )}
 
         </form>
 {input.types.map(el =>
     <div>
-  <p>{el}</p>
-        <button onClick={()=> handleDelete(el)}>X</button>
+  <p className={style.px}>{el}</p>
+        <button className={style.dx} onClick={()=> handleDelete(el)}>X</button>
     </div>
      )}
 
-    </div>
+    </div></div>
 )
 
 }

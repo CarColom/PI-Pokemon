@@ -8,6 +8,7 @@ import Pagination from "../../Components/Pagination/pagination";
 import { filterByType, filterIfCreated, orderByname, orderByAttack} from "../../Redux/actions";
 import NavBar from "../../Components/NavBar/navbar";
 import style from "./home.module.css";
+import Fondo from "../../Imagenes/Fondo.mp4"
 
 
 export default function Home() {
@@ -62,6 +63,10 @@ function handleAttack(e) {
 
   return (
     <body>
+      
+     <video className={style.videobackground } autoPlay loop muted>
+          <source src={Fondo} type="video/mp4" />
+        </video>
       <div  className={style.container}>
         <NavBar/>
         <div className={style.filters}>
@@ -125,11 +130,14 @@ function handleAttack(e) {
        </Link>
 
   ))}
-  </div><Pagination
+  <div></div></div>
+  <Pagination
         pokemonPerPage={pokemonPerPage}
         allPokemon={allPokemon.length}
         paginado={paginado}
-        /></div>
-    
+        />
+        </div>
+  <br />
+  <br />
     </body>
 ) }

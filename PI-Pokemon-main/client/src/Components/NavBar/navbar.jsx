@@ -23,12 +23,11 @@ const NavBar = () => {
 
   return (
     <div className={style.navbar}>
-      <div className={style.navbar2}>
       <div>
-      <h1>Pokemon</h1>
+      <p className={style.pnav}>Mundo Pokemon</p>
       </div>
       
-      <div>
+      <div className={style.containernav}>
         <ul>
           <li className={style.linknavli}>
             <Link to="/Create">Crear Pokemon</Link>
@@ -40,18 +39,18 @@ const NavBar = () => {
             type="text"
             value={name}
             onChange={handleSearchInputChange}
-            placeholder="Search..."
+            placeholder="Busca tu Pokemon..."
           />
           <button className={style.buttonnav} onClick={handleSearchButtonClick}>
             <span>Buscar</span>
           </button>
         </div>
         <ul>
-          <li className={style.linknavli}>
+          <li className={style.linknavli2}>
             <Link to="/home"  onClick={e=> {handleClick(e)}}>Home</Link>
           </li>
         </ul>
-      </div></div>
+      </div>
     </div>
   );
 };
