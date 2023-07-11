@@ -25,6 +25,6 @@ Inicia el servidor local: npm start (o el comando necesario para iniciar el serv
 Asegúrate de tener todas las dependencias necesarias instaladas y de configurar adecuadamente cualquier base de datos u otros servicios externos requeridos para el funcionamiento de la página.
 
 [Landing](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20landing.png)
-[Landing](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20home.png)
-[Landing](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20detail.png)
-[Landing](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20create.png)
+[Home](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20home.png)
+[Detail](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20detail.png)
+[Create](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20create.png)
