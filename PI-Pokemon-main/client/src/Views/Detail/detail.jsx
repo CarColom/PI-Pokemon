@@ -9,15 +9,17 @@ import Fondo from "../../Imagenes/Fondo.mp4"
 export default function Detail(props) {
   const dispatch = useDispatch();
   const { id } = props.match.params;
-  const [isLoading, setIsLoading] = useState(true);
+  const [state, setState] = useState({
+    loading: true,
+  });
+
 
   useEffect(() => {
-    setIsLoading(true);
     dispatch(getIdPokemon(id)); 
 
     
     setTimeout(() => {
-      setIsLoading(false);
+      setState({ ...state, loading: false });
     }, 2000);
   }, [dispatch, id]);
 
@@ -34,7 +36,7 @@ export default function Detail(props) {
       </Link>
       </div>
       <div className={style.detail }>
-        {isLoading ? (
+        {state.loading ? (
           <p className={style.detailp }>Loading...</p>
         ) : myPokemon ? (
           <div>

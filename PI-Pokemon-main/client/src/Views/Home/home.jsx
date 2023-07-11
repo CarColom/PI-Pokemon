@@ -33,6 +33,7 @@ useEffect(() => {
 }, [dispatch, currentPage, pokemonPerPage]);
 
 
+
 function handleFilterType(e) {
   e.preventDefault();
   dispatch(filterByType(e.target.value));
