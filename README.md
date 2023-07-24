@@ -12,6 +12,8 @@ Filtros y ordenamientos: Utiliza nuestros filtros para refinar tu búsqueda por 
 Crear un nuevo Pokémon: Si conoces un Pokémon que no se encuentra en nuestra lista, puedes agregarlo mediante nuestro formulario de creación de Pokémons. Proporciona información relevante sobre el Pokémon, como su nombre, tipo y una descripción detallada.
 
 ![image](https://github.com/CarColom/PI-Pokemon/assets/121466242/90d025a7-9b93-4b33-bf34-50c96bf9fefb)
+![image](https://github.com/CarColom/PI-Pokemon/assets/121466242/b916f3cb-d4ea-47bd-9249-6a1d8e387337)
+
 
 
 Tecnologías utilizadas
