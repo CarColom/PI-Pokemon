@@ -2,6 +2,9 @@
 Página de Pokémons
 ¡Bienvenido a la página de Pokémons! Aquí podrás explorar una amplia variedad de Pokémons y obtener información detallada sobre cada uno de ellos. También encontrarás funciones para filtrar y ordenar los Pokémons, así como la posibilidad de agregar un nuevo Pokémon a nuestra colección.
 
+![image](https://github.com/CarColom/PI-Pokemon/assets/121466242/abeef033-fb00-415c-995a-f293748253a4)
+
+
 Características principales
 Explorar Pokémons: Encuentra el Pokémon que te interesa en nuestra extensa lista de Pokémons. Cada Pokémon se presenta con su imagen, nombre y tipo para darte una idea general.
 Detalles del Pokémon: Al hacer clic en un Pokémon específico, serás redirigido a una página de detalles que proporciona información más completa sobre el Pokémon seleccionado. Aquí encontrarás detalles como su número en la Pokédex, habilidades, estadísticas de combate y evoluciones.
