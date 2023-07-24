@@ -13,7 +13,7 @@ Crear un nuevo Pokémon: Si conoces un Pokémon que no se encuentra en nuestra l
 
 ![image](https://github.com/CarColom/PI-Pokemon/assets/121466242/90d025a7-9b93-4b33-bf34-50c96bf9fefb)
 ![image](https://github.com/CarColom/PI-Pokemon/assets/121466242/b916f3cb-d4ea-47bd-9249-6a1d8e387337)
-
+![image](https://github.com/CarColom/PI-Pokemon/assets/121466242/28abcbd0-ee9d-48e4-98c6-29b43062e40f)
 
 
 Tecnologías utilizadas
@@ -34,7 +34,4 @@ Instala las dependencias: npm install (o utiliza el gestor de paquetes correspon
 Inicia el servidor local: npm start (o el comando necesario para iniciar el servidor).
 Asegúrate de tener todas las dependencias necesarias instaladas y de configurar adecuadamente cualquier base de datos u otros servicios externos requeridos para el funcionamiento de la página.
 
-[Landing](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20landing.png)
-[Home](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20home.png)
-[Detail](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20detail.png)
-[Create](./PI-Pokemon-main/client/src/Imagenes/Imagenes/pokemon%20create.png)
+
